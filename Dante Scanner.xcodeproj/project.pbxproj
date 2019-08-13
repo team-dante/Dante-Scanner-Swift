@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A0D409230347C700F6613D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D408230347C700F6613D /* AppDelegate.swift */; };
+		24A0D40B230347C700F6613D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D40A230347C700F6613D /* ViewController.swift */; };
+		24A0D40E230347C700F6613D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D40C230347C700F6613D /* Main.storyboard */; };
+		24A0D410230347C800F6613D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D40F230347C800F6613D /* Assets.xcassets */; };
+		24A0D413230347C800F6613D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D411230347C800F6613D /* LaunchScreen.storyboard */; };
+		24A0D41E230347C800F6613D /* Dante_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D41D230347C800F6613D /* Dante_ScannerTests.swift */; };
+		24A0D429230347C800F6613D /* Dante_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D428230347C800F6613D /* Dante_ScannerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24A0D41A230347C800F6613D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24A0D3FD230347C700F6613D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24A0D404230347C700F6613D;
+			remoteInfo = "Dante Scanner";
+		};
+		24A0D425230347C800F6613D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24A0D3FD230347C700F6613D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24A0D404230347C700F6613D;
+			remoteInfo = "Dante Scanner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24A0D405230347C700F6613D /* Dante Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dante Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A0D408230347C700F6613D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24A0D40A230347C700F6613D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24A0D40D230347C700F6613D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24A0D40F230347C800F6613D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24A0D412230347C800F6613D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24A0D414230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24A0D419230347C800F6613D /* Dante ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dante ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A0D41D230347C800F6613D /* Dante_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante_ScannerTests.swift; sourceTree = "<group>"; };
+		24A0D41F230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dante ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A0D428230347C800F6613D /* Dante_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante_ScannerUITests.swift; sourceTree = "<group>"; };
+		24A0D42A230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24A0D402230347C700F6613D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D416230347C800F6613D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D421230347C800F6613D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24A0D3FC230347C700F6613D = {
+			isa = PBXGroup;
+			children = (
+				24A0D407230347C700F6613D /* Dante Scanner */,
+				24A0D41C230347C800F6613D /* Dante ScannerTests */,
+				24A0D427230347C800F6613D /* Dante ScannerUITests */,
+				24A0D406230347C700F6613D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24A0D406230347C700F6613D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24A0D405230347C700F6613D /* Dante Scanner.app */,
+				24A0D419230347C800F6613D /* Dante ScannerTests.xctest */,
+				24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24A0D407230347C700F6613D /* Dante Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				24A0D408230347C700F6613D /* AppDelegate.swift */,
+				24A0D40A230347C700F6613D /* ViewController.swift */,
+				24A0D40C230347C700F6613D /* Main.storyboard */,
+				24A0D40F230347C800F6613D /* Assets.xcassets */,
+				24A0D411230347C800F6613D /* LaunchScreen.storyboard */,
+				24A0D414230347C800F6613D /* Info.plist */,
+			);
+			path = "Dante Scanner";
+			sourceTree = "<group>";
+		};
+		24A0D41C230347C800F6613D /* Dante ScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				24A0D41D230347C800F6613D /* Dante_ScannerTests.swift */,
+				24A0D41F230347C800F6613D /* Info.plist */,
+			);
+			path = "Dante ScannerTests";
+			sourceTree = "<group>";
+		};
+		24A0D427230347C800F6613D /* Dante ScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24A0D428230347C800F6613D /* Dante_ScannerUITests.swift */,
+				24A0D42A230347C800F6613D /* Info.plist */,
+			);
+			path = "Dante ScannerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24A0D404230347C700F6613D /* Dante Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A0D42D230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante Scanner" */;
+			buildPhases = (
+				24A0D401230347C700F6613D /* Sources */,
+				24A0D402230347C700F6613D /* Frameworks */,
+				24A0D403230347C700F6613D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dante Scanner";
+			productName = "Dante Scanner";
+			productReference = 24A0D405230347C700F6613D /* Dante Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24A0D418230347C800F6613D /* Dante ScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A0D430230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerTests" */;
+			buildPhases = (
+				24A0D415230347C800F6613D /* Sources */,
+				24A0D416230347C800F6613D /* Frameworks */,
+				24A0D417230347C800F6613D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24A0D41B230347C800F6613D /* PBXTargetDependency */,
+			);
+			name = "Dante ScannerTests";
+			productName = "Dante ScannerTests";
+			productReference = 24A0D419230347C800F6613D /* Dante ScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24A0D423230347C800F6613D /* Dante ScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A0D433230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerUITests" */;
+			buildPhases = (
+				24A0D420230347C800F6613D /* Sources */,
+				24A0D421230347C800F6613D /* Frameworks */,
+				24A0D422230347C800F6613D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24A0D426230347C800F6613D /* PBXTargetDependency */,
+			);
+			name = "Dante ScannerUITests";
+			productName = "Dante ScannerUITests";
+			productReference = 24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24A0D3FD230347C700F6613D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Hung Phan";
+				TargetAttributes = {
+					24A0D404230347C700F6613D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					24A0D418230347C800F6613D = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 24A0D404230347C700F6613D;
+					};
+					24A0D423230347C800F6613D = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 24A0D404230347C700F6613D;
+					};
+				};
+			};
+			buildConfigurationList = 24A0D400230347C700F6613D /* Build configuration list for PBXProject "Dante Scanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24A0D3FC230347C700F6613D;
+			productRefGroup = 24A0D406230347C700F6613D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24A0D404230347C700F6613D /* Dante Scanner */,
+				24A0D418230347C800F6613D /* Dante ScannerTests */,
+				24A0D423230347C800F6613D /* Dante ScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24A0D403230347C700F6613D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A0D413230347C800F6613D /* LaunchScreen.storyboard in Resources */,
+				24A0D410230347C800F6613D /* Assets.xcassets in Resources */,
+				24A0D40E230347C700F6613D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D417230347C800F6613D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D422230347C800F6613D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24A0D401230347C700F6613D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A0D40B230347C700F6613D /* ViewController.swift in Sources */,
+				24A0D409230347C700F6613D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D415230347C800F6613D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A0D41E230347C800F6613D /* Dante_ScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0D420230347C800F6613D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A0D429230347C800F6613D /* Dante_ScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24A0D41B230347C800F6613D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24A0D404230347C700F6613D /* Dante Scanner */;
+			targetProxy = 24A0D41A230347C800F6613D /* PBXContainerItemProxy */;
+		};
+		24A0D426230347C800F6613D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24A0D404230347C700F6613D /* Dante Scanner */;
+			targetProxy = 24A0D425230347C800F6613D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24A0D40C230347C700F6613D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24A0D40D230347C700F6613D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24A0D411230347C800F6613D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24A0D412230347C800F6613D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24A0D42B230347C800F6613D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24A0D42C230347C800F6613D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24A0D42E230347C800F6613D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X86U5N326S;
+				INFOPLIST_FILE = "Dante Scanner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24A0D42F230347C800F6613D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X86U5N326S;
+				INFOPLIST_FILE = "Dante Scanner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24A0D431230347C800F6613D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dante ScannerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dante Scanner.app/Dante Scanner";
+			};
+			name = Debug;
+		};
+		24A0D432230347C800F6613D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dante ScannerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dante Scanner.app/Dante Scanner";
+			};
+			name = Release;
+		};
+		24A0D434230347C800F6613D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dante ScannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dante Scanner";
+			};
+			name = Debug;
+		};
+		24A0D435230347C800F6613D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dante ScannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dante Scanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24A0D400230347C700F6613D /* Build configuration list for PBXProject "Dante Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A0D42B230347C800F6613D /* Debug */,
+				24A0D42C230347C800F6613D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24A0D42D230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A0D42E230347C800F6613D /* Debug */,
+				24A0D42F230347C800F6613D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24A0D430230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A0D431230347C800F6613D /* Debug */,
+				24A0D432230347C800F6613D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24A0D433230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A0D434230347C800F6613D /* Debug */,
+				24A0D435230347C800F6613D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24A0D3FD230347C700F6613D /* Project object */;
+}
