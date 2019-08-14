@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -155,7 +155,6 @@
 				50751B70E4B6B016C212DCDE /* Pods-Dante ScannerUITests.debug.xcconfig */,
 				FC25DDBBD15886D4646C15F7 /* Pods-Dante ScannerUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +180,7 @@
 				24A0D402230347C700F6613D /* Frameworks */,
 				24A0D403230347C700F6613D /* Resources */,
 				1CC39ACF171E3BE85FFA65D4 /* [CP] Embed Pods Frameworks */,
+				24CA68DE2304CA2300CE6142 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +317,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dante Scanner/Pods-Dante Scanner-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		24CA68DE2304CA2300CE6142 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\ncustom_sim=`xcrun simctl list | grep 'Custom Simulators' | awk -F'[()]' '{print $2}'`\nif [ ! -z \"${custom_sim}\" ] && [ \"${TARGET_DEVICE_IDENTIFIER}\" = \"${custom_sim}\" ]; then\n/bin/sh multipleiPadSimulatorsStartup.sh\nfi\n";
 		};
 		3A665FE16C7888551A5E2F28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -578,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -597,7 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
