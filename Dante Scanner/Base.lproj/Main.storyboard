@@ -31,7 +31,7 @@
                                             <constraint firstAttribute="height" constant="60" id="SGm-a5-l3l"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter passcode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWA-JT-Kwj">
@@ -47,6 +47,9 @@
                                             <constraint firstAttribute="height" constant="50" id="XP9-xj-9F5"/>
                                         </constraints>
                                         <state key="normal" title="Access"/>
+                                        <connections>
+                                            <action selector="accessBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A4u-ET-Wa8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,11 +82,27 @@
                     </view>
                     <connections>
                         <outlet property="passcodeTextField" destination="xS5-Zp-T9K" id="2Nw-0i-Y9m"/>
+                        <segue destination="iSd-oE-HKx" kind="show" identifier="gotoQRscanner" id="ZY6-wT-ozp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14.648437499999998" y="12.737920937042459"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IHd-Zj-QOf">
+            <objects>
+                <viewController id="iSd-oE-HKx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68S-75-71g">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qs1-Vu-Onu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg3-wp-wV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="13"/>
         </scene>
     </scenes>
     <resources>

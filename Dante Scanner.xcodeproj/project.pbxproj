@@ -8,34 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		037D9DE891E39596F0F18CA0 /* Pods_Dante_Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81A160B1F0498DE202F9A48 /* Pods_Dante_Scanner.framework */; };
-		1E91C7FD3E3B71D4B3D0FF28 /* Pods_Dante_ScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6162B4FBD24B7BDAD93AA735 /* Pods_Dante_ScannerTests.framework */; };
 		24A0D409230347C700F6613D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D408230347C700F6613D /* AppDelegate.swift */; };
 		24A0D40B230347C700F6613D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D40A230347C700F6613D /* ViewController.swift */; };
 		24A0D40E230347C700F6613D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D40C230347C700F6613D /* Main.storyboard */; };
 		24A0D410230347C800F6613D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D40F230347C800F6613D /* Assets.xcassets */; };
 		24A0D413230347C800F6613D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D411230347C800F6613D /* LaunchScreen.storyboard */; };
-		24A0D41E230347C800F6613D /* Dante_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D41D230347C800F6613D /* Dante_ScannerTests.swift */; };
-		24A0D429230347C800F6613D /* Dante_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0D428230347C800F6613D /* Dante_ScannerUITests.swift */; };
 		24A0D43723034A0E00F6613D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A0D43623034A0E00F6613D /* GoogleService-Info.plist */; };
-		5FE45574A57D4955ADC65342 /* Pods_Dante_ScannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96FA4A0E89D0275F35D6AC1 /* Pods_Dante_ScannerUITests.framework */; };
+		24CC7FEC2304D76700440F5A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CC7FEB2304D76700440F5A /* StoreKit.framework */; };
+		24CC7FEE2304E1EF00440F5A /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC7FED2304E1EF00440F5A /* extension.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24A0D41A230347C800F6613D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24A0D3FD230347C700F6613D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24A0D404230347C700F6613D;
-			remoteInfo = "Dante Scanner";
-		};
-		24A0D425230347C800F6613D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24A0D3FD230347C700F6613D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24A0D404230347C700F6613D;
-			remoteInfo = "Dante Scanner";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07F11C06C886A7CBF382D200 /* Pods-Dante ScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dante ScannerTests.release.xcconfig"; path = "Target Support Files/Pods-Dante ScannerTests/Pods-Dante ScannerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,13 +27,14 @@
 		24A0D40F230347C800F6613D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24A0D412230347C800F6613D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A0D414230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24A0D419230347C800F6613D /* Dante ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dante ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A0D41D230347C800F6613D /* Dante_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante_ScannerTests.swift; sourceTree = "<group>"; };
 		24A0D41F230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dante ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A0D428230347C800F6613D /* Dante_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante_ScannerUITests.swift; sourceTree = "<group>"; };
 		24A0D42A230347C800F6613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A0D43623034A0E00F6613D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24CA68DF2304D40D00CE6142 /* Dante Scanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dante Scanner.entitlements"; sourceTree = "<group>"; };
+		24CC7FEB2304D76700440F5A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		24CC7FED2304E1EF00440F5A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		50751B70E4B6B016C212DCDE /* Pods-Dante ScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dante ScannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dante ScannerUITests/Pods-Dante ScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6162B4FBD24B7BDAD93AA735 /* Pods_Dante_ScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dante_ScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		635355F307DC1356DBD593CB /* Pods-Dante Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dante Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Dante Scanner/Pods-Dante Scanner.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,22 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				037D9DE891E39596F0F18CA0 /* Pods_Dante_Scanner.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24A0D416230347C800F6613D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E91C7FD3E3B71D4B3D0FF28 /* Pods_Dante_ScannerTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24A0D421230347C800F6613D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FE45574A57D4955ADC65342 /* Pods_Dante_ScannerUITests.framework in Frameworks */,
+				24CC7FEC2304D76700440F5A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				24A0D405230347C700F6613D /* Dante Scanner.app */,
-				24A0D419230347C800F6613D /* Dante ScannerTests.xctest */,
-				24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,11 +81,13 @@
 		24A0D407230347C700F6613D /* Dante Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				24CA68DF2304D40D00CE6142 /* Dante Scanner.entitlements */,
 				24A0D408230347C700F6613D /* AppDelegate.swift */,
 				24A0D40A230347C700F6613D /* ViewController.swift */,
 				24A0D40C230347C700F6613D /* Main.storyboard */,
 				24A0D40F230347C800F6613D /* Assets.xcassets */,
 				24A0D411230347C800F6613D /* LaunchScreen.storyboard */,
+				24CC7FED2304E1EF00440F5A /* extension.swift */,
 				24A0D414230347C800F6613D /* Info.plist */,
 				24A0D43623034A0E00F6613D /* GoogleService-Info.plist */,
 			);
@@ -161,6 +128,7 @@
 		5FA8F5085ECC28D8A4F2AC70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24CC7FEB2304D76700440F5A /* StoreKit.framework */,
 				F81A160B1F0498DE202F9A48 /* Pods_Dante_Scanner.framework */,
 				6162B4FBD24B7BDAD93AA735 /* Pods_Dante_ScannerTests.framework */,
 				D96FA4A0E89D0275F35D6AC1 /* Pods_Dante_ScannerUITests.framework */,
@@ -191,44 +159,6 @@
 			productReference = 24A0D405230347C700F6613D /* Dante Scanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24A0D418230347C800F6613D /* Dante ScannerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24A0D430230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerTests" */;
-			buildPhases = (
-				3A665FE16C7888551A5E2F28 /* [CP] Check Pods Manifest.lock */,
-				24A0D415230347C800F6613D /* Sources */,
-				24A0D416230347C800F6613D /* Frameworks */,
-				24A0D417230347C800F6613D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24A0D41B230347C800F6613D /* PBXTargetDependency */,
-			);
-			name = "Dante ScannerTests";
-			productName = "Dante ScannerTests";
-			productReference = 24A0D419230347C800F6613D /* Dante ScannerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		24A0D423230347C800F6613D /* Dante ScannerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24A0D433230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerUITests" */;
-			buildPhases = (
-				9AE48F38215B6228B451B4AD /* [CP] Check Pods Manifest.lock */,
-				24A0D420230347C800F6613D /* Sources */,
-				24A0D421230347C800F6613D /* Frameworks */,
-				24A0D422230347C800F6613D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24A0D426230347C800F6613D /* PBXTargetDependency */,
-			);
-			name = "Dante ScannerUITests";
-			productName = "Dante ScannerUITests";
-			productReference = 24A0D424230347C800F6613D /* Dante ScannerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,14 +171,14 @@
 				TargetAttributes = {
 					24A0D404230347C700F6613D = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					24A0D418230347C800F6613D = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 24A0D404230347C700F6613D;
-					};
-					24A0D423230347C800F6613D = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 24A0D404230347C700F6613D;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -266,8 +196,6 @@
 			projectRoot = "";
 			targets = (
 				24A0D404230347C700F6613D /* Dante Scanner */,
-				24A0D418230347C800F6613D /* Dante ScannerTests */,
-				24A0D423230347C800F6613D /* Dante ScannerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,20 +209,6 @@
 				24A0D43723034A0E00F6613D /* GoogleService-Info.plist in Resources */,
 				24A0D410230347C800F6613D /* Assets.xcassets in Resources */,
 				24A0D40E230347C700F6613D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24A0D417230347C800F6613D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24A0D422230347C800F6613D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,28 +249,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\ncustom_sim=`xcrun simctl list | grep 'Custom Simulators' | awk -F'[()]' '{print $2}'`\nif [ ! -z \"${custom_sim}\" ] && [ \"${TARGET_DEVICE_IDENTIFIER}\" = \"${custom_sim}\" ]; then\n/bin/sh multipleiPadSimulatorsStartup.sh\nfi\n";
 		};
-		3A665FE16C7888551A5E2F28 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Dante ScannerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		45340098CCEF00AAAD9FDE1B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,28 +271,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9AE48F38215B6228B451B4AD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Dante ScannerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,41 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CC7FEE2304E1EF00440F5A /* extension.swift in Sources */,
 				24A0D40B230347C700F6613D /* ViewController.swift in Sources */,
 				24A0D409230347C700F6613D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24A0D415230347C800F6613D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24A0D41E230347C800F6613D /* Dante_ScannerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24A0D420230347C800F6613D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24A0D429230347C800F6613D /* Dante_ScannerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24A0D41B230347C800F6613D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24A0D404230347C700F6613D /* Dante Scanner */;
-			targetProxy = 24A0D41A230347C800F6613D /* PBXContainerItemProxy */;
-		};
-		24A0D426230347C800F6613D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24A0D404230347C700F6613D /* Dante Scanner */;
-			targetProxy = 24A0D425230347C800F6613D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24A0D40C230347C700F6613D /* Main.storyboard */ = {
@@ -592,7 +434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -611,92 +453,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Release;
-		};
-		24A0D431230347C800F6613D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB4DC191A8FF49CF854E6FB9 /* Pods-Dante ScannerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dante ScannerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dante Scanner.app/Dante Scanner";
-			};
-			name = Debug;
-		};
-		24A0D432230347C800F6613D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F11C06C886A7CBF382D200 /* Pods-Dante ScannerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dante ScannerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dante Scanner.app/Dante Scanner";
-			};
-			name = Release;
-		};
-		24A0D434230347C800F6613D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50751B70E4B6B016C212DCDE /* Pods-Dante ScannerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dante ScannerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dante Scanner";
-			};
-			name = Debug;
-		};
-		24A0D435230347C800F6613D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC25DDBBD15886D4646C15F7 /* Pods-Dante ScannerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dante ScannerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dante-scanner.Dante-ScannerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dante Scanner";
 			};
 			name = Release;
 		};
@@ -717,24 +477,6 @@
 			buildConfigurations = (
 				24A0D42E230347C800F6613D /* Debug */,
 				24A0D42F230347C800F6613D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24A0D430230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24A0D431230347C800F6613D /* Debug */,
-				24A0D432230347C800F6613D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24A0D433230347C800F6613D /* Build configuration list for PBXNativeTarget "Dante ScannerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24A0D434230347C800F6613D /* Debug */,
-				24A0D435230347C800F6613D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

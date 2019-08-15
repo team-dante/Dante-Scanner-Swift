@@ -10,6 +10,6 @@ xcrun simctl boot "$line"
 # Boot the simulator with identifier hold by $line var
 xcrun simctl install "$line" "$path" 
 # Install the .app file located at location hold by $path var at booted simulator with identifier hold by $line var
-xcrun simctl launch "$line" com.dante-scanner
+xcrun simctl launch "$line" com.dante-scanner0
 # Launch .app using its bundle at simulator with identifier hold by $line var
 done
