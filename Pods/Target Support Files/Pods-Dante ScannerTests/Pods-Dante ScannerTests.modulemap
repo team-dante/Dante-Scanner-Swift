@@ -1,6 +1,0 @@
-framework module Pods_Dante_ScannerTests {
-  umbrella header "Pods-Dante ScannerTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

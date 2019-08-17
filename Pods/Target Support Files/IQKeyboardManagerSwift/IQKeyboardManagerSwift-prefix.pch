@@ -10,7 +10,3 @@
 #endif
 #endif
 
-
-FOUNDATION_EXPORT double Pods_Dante_ScannerUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Dante_ScannerUITestsVersionString[];
-

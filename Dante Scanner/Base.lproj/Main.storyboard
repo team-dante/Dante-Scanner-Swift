@@ -25,28 +25,34 @@
                                 <rect key="frame" x="162.5" y="489" width="699" height="388"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QPc-xp-Ben">
-                                        <rect key="frame" x="24.5" y="147" width="650" height="94"/>
+                                        <rect key="frame" x="24.5" y="141" width="650" height="106"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Passcode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msx-bB-reX">
-                                                <rect key="frame" x="0.0" y="0.0" width="650" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="650" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-q7-cZQ">
-                                                <rect key="frame" x="0.0" y="34" width="650" height="60"/>
+                                                <rect key="frame" x="0.0" y="46" width="650" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="0Jc-xd-57y">
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="45"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" constant="650" id="74F-vc-JTA">
                                                         <variation key="heightClass=regular-widthClass=compact" constant="350"/>
                                                     </constraint>
                                                 </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -59,7 +65,11 @@
                                             </constraint>
                                             <constraint firstAttribute="width" constant="200" id="zwj-KG-Xvh"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Access"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        </variation>
                                         <connections>
                                             <action selector="accessBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DiD-tc-zqm"/>
                                         </connections>

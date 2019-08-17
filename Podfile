@@ -11,15 +11,6 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
-
-  target 'Dante ScannerTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Dante ScannerUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+pod 'IQKeyboardManagerSwift'
 
 end

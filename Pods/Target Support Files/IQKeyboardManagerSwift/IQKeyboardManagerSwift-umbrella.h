@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Dante_ScannerTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Dante_ScannerTestsVersionString[];
+FOUNDATION_EXPORT double IQKeyboardManagerSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char IQKeyboardManagerSwiftVersionString[];
 
