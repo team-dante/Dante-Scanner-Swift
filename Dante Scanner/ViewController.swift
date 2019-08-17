@@ -13,11 +13,13 @@ class ViewController: UIViewController {
     
     var handle : AuthStateDidChangeListenerHandle?
 
-    @IBOutlet weak var passcodeTextField: UITextField!
+    @IBOutlet weak var passcodeTextField: CustomTextField!
+    @IBOutlet weak var accessBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         passcodeTextField.layer.cornerRadius = 10
+        accessBtn.layer.cornerRadius = 10
         
     }
     

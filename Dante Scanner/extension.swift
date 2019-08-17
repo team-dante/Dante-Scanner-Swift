@@ -32,3 +32,21 @@ extension UIViewController {
         }
     }
 }
+
+// DOESN'T WORK
+//class CustomTextField : UITextField {
+//    required init(coder aDecoder : NSCoder){
+//        super.init(coder: aDecoder)!
+//
+//        self.layer.cornerRadius = 5.0
+//
+//    }
+//}
+//
+//class CustomButton : UIButton {
+//    required init(coder aDecoder : NSCoder){
+//        super.init(coder: aDecoder)!
+//
+//        self.layer.cornerRadius = 10.0
+//    }
+//}
