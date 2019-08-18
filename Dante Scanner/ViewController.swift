@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        passcodeTextField.layer.cornerRadius = 10
+        passcodeTextField.layer.cornerRadius = 5
         accessBtn.layer.cornerRadius = 10
         
     }
