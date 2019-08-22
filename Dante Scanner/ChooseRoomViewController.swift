@@ -14,6 +14,8 @@ class ChooseRoomViewController: UIViewController {
     @IBOutlet weak var room1: UIButton!
     @IBOutlet weak var room2: UIButton!
     @IBOutlet weak var room3: UIButton!
+    @IBOutlet weak var room4: UIButton!
+    
     struct GlobalVar {
         static var room = ""
     }
@@ -24,6 +26,7 @@ class ChooseRoomViewController: UIViewController {
         room1.layer.cornerRadius = 10
         room2.layer.cornerRadius = 10
         room3.layer.cornerRadius = 10
+        room4.layer.cornerRadius = 10
     }
     
     @IBAction func room1(_ sender: Any) {
@@ -32,11 +35,14 @@ class ChooseRoomViewController: UIViewController {
     }
     @IBAction func room2(_ sender: Any) {
         self.performSegue(withIdentifier: "qrScannerPreview", sender: nil)
-        GlobalVar.room = "CTS"
+        GlobalVar.room = "CT"
     }
     @IBAction func room3(_ sender: Any) {
         self.performSegue(withIdentifier: "qrScannerPreview", sender: nil)
-        GlobalVar.room = "LA2"
+        GlobalVar.room = "LA1"
+    }
+    @IBAction func room4(_ sender: Any) {
+        GlobalVar.room = "TLA"
     }
     
 }

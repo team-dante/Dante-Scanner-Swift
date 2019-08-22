@@ -79,7 +79,7 @@ class QRScannerVC: UIViewController {
         // update staff location (could have done a lot more)
         if self.role == 0 {
             Database.database().reference().child("/StaffLocation/\(self.decodedString)/room").setValue(self.room)
-            self.greeting = "Hey, staff. You are now at \(self.room)"
+            self.greeting = "Hey, staff!\nYou are now at \(self.prettifyRoom(input: self.room))"
             completion(true)
         } // if it is a patient,
         else {
@@ -107,7 +107,7 @@ class QRScannerVC: UIViewController {
                                     if inSession {
                                         child.child("/\(uid)/inSession").setValue(false)
                                         child.child("/\(uid)/endTime").setValue(Int(NSDate().timeIntervalSince1970))
-                                        self.greeting = "Thank you for scanning out. You left \(self.room)"
+                                        self.greeting = "Thank you for scanning out!\nYou left \(self.prettifyRoom(input: self.room))"
                                         
                                         // patient location will be set to "Private" when scanning out
                                         locationPath.setValue(["room": "Private"])
@@ -128,7 +128,7 @@ class QRScannerVC: UIViewController {
                     if inCurrRoom {
                         child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
                         locationPath.setValue(["room": self.room])
-                        self.greeting = "Thank you for scanning in. You are at \(self.room)"
+                        self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                         
                         // halt the closure immediately once done
                         completion(true)
@@ -138,7 +138,7 @@ class QRScannerVC: UIViewController {
                 } // if no snapshot, simply create a new time tracking object with inSession = true
                 else {
                     child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
-                    self.greeting = "Thank you for scanning in. You are at \(self.room)"
+                    self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                     completion(true)
                 }
             })

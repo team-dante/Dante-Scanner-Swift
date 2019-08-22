@@ -24,6 +24,21 @@ extension UIViewController {
         return "\(year)-\(formattedMonth)-\(formattedDay)"
     }
     
+    func prettifyRoom(input : String) -> String {
+        switch input {
+        case "WR":
+            return "Waiting Room"
+        case "CT":
+            return "CT Simulator"
+        case "LA1":
+            return "Linear Accelerator 1"
+        case  "TLA":
+            return "Trilogy Linear Accelerator"
+        default:
+            return "N/A"
+        }
+    }
+    
     func showSpinner(onView : UIView) {
         let spinnerView = UIView.init(frame: onView.bounds)
         spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)

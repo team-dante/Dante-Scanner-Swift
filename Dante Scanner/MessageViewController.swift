@@ -14,9 +14,13 @@ class MessageViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var successIcon: UIImageView!
+    @IBOutlet weak var counterView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        counterView.layer.cornerRadius = 10
         
         messageLabel.text = message
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
