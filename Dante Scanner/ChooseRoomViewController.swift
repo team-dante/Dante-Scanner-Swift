@@ -14,6 +14,10 @@ class ChooseRoomViewController: UIViewController {
     @IBOutlet weak var room1: UIButton!
     @IBOutlet weak var room2: UIButton!
     @IBOutlet weak var room3: UIButton!
+    struct GlobalVar {
+        static var room = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,13 +27,16 @@ class ChooseRoomViewController: UIViewController {
     }
     
     @IBAction func room1(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "qrScannerPreview", sender: nil)
+        GlobalVar.room = "WR"
     }
     @IBAction func room2(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "qrScannerPreview", sender: nil)
+        GlobalVar.room = "CTS"
     }
     @IBAction func room3(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "qrScannerPreview", sender: nil)
+        GlobalVar.room = "LA2"
     }
     
 }

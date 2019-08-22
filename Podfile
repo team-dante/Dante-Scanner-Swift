@@ -12,5 +12,5 @@ pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
 pod 'IQKeyboardManagerSwift'
-
+pod 'QRCodeReader.swift', '~> 10.1.0'
 end

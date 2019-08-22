@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import Foundation
 
 var vSpinner : UIView?
 extension UIViewController {
+    
+    // return today's date in YYYY-MM-DD format
+    func formattedDate() -> String {
+        let calendar = Calendar.current
+        let today = Date()
+        let year = calendar.component(.year, from: today)
+        let month = calendar.component(.month, from: today)
+        let day = calendar.component(.day, from: today)
+        let formattedMonth = month < 10 ? "0\(month)" : "\(month)"
+        let formattedDay = day < 10 ? "0\(day)" : "\(day)"
+        return "\(year)-\(formattedMonth)-\(formattedDay)"
+    }
+    
     func showSpinner(onView : UIView) {
         let spinnerView = UIView.init(frame: onView.bounds)
         spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
@@ -32,21 +46,3 @@ extension UIViewController {
         }
     }
 }
-
-// DOESN'T WORK
-//class CustomTextField : UITextField {
-//    required init(coder aDecoder : NSCoder){
-//        super.init(coder: aDecoder)!
-//
-//        self.layer.cornerRadius = 5.0
-//
-//    }
-//}
-//
-//class CustomButton : UIButton {
-//    required init(coder aDecoder : NSCoder){
-//        super.init(coder: aDecoder)!
-//
-//        self.layer.cornerRadius = 10.0
-//    }
-//}

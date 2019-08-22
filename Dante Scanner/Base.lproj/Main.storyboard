@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iSd-oE-HKx">
     <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,12 +102,11 @@
                     <connections>
                         <outlet property="accessBtn" destination="qpn-92-aRW" id="KIb-uF-og5"/>
                         <outlet property="passcodeTextField" destination="wKq-q7-cZQ" id="lec-aj-FcK"/>
-                        <segue destination="iSd-oE-HKx" kind="show" identifier="gotoQRscanner" id="ZY6-wT-ozp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14.648437499999998" y="12.737920937042459"/>
+            <point key="canvasLocation" x="17" y="13"/>
         </scene>
         <!--Choose Room View Controller-->
         <scene sceneID="IHd-Zj-QOf">
@@ -138,6 +137,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                         <state key="normal" title="Waiting Room"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                         <connections>
                                             <action selector="room1:" destination="Oyc-0v-7Kf" eventType="touchUpInside" id="6Gx-NA-CiF"/>
                                             <action selector="room1:" destination="iSd-oE-HKx" eventType="touchUpInside" id="RQQ-rb-nO5"/>
@@ -149,6 +151,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                         <state key="normal" title="CT Simulator"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                         <connections>
                                             <action selector="room2:" destination="iSd-oE-HKx" eventType="touchUpInside" id="94y-dx-7uh"/>
                                             <action selector="room2:" destination="Oyc-0v-7Kf" eventType="touchUpInside" id="LNF-1r-XKK"/>
@@ -160,6 +165,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                         <state key="normal" title="Linear Accelerator 2"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                         <connections>
                                             <action selector="room3:" destination="iSd-oE-HKx" eventType="touchUpInside" id="Gb2-30-SQ0"/>
                                             <action selector="room3:" destination="Oyc-0v-7Kf" eventType="touchUpInside" id="QMa-cL-j1o"/>
@@ -187,12 +195,99 @@
                         <outlet property="room1" destination="V5h-QN-TQt" id="k82-uX-9k4"/>
                         <outlet property="room2" destination="n50-4c-mLr" id="8pb-21-lY3"/>
                         <outlet property="room3" destination="qnj-rn-gqb" id="x8Z-bp-Om9"/>
+                        <segue destination="Jm9-uC-XUP" kind="show" identifier="qrScannerPreview" id="3Zz-J5-SlV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg3-wp-wV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Oyc-0v-7Kf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="721.875" y="12.737920937042459"/>
+        </scene>
+        <!--ScannerVC-->
+        <scene sceneID="W0O-Dm-53z">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerVC" id="Jm9-uC-XUP" customClass="QRScannerVC" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eCq-jn-skU">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfp-UU-PUw" customClass="QRCodeReaderView" customModule="QRCodeReader">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sfp-UU-PUw" firstAttribute="trailing" secondItem="ITt-dL-2mb" secondAttribute="trailing" id="GAh-Qk-nbR"/>
+                            <constraint firstItem="sfp-UU-PUw" firstAttribute="leading" secondItem="ITt-dL-2mb" secondAttribute="leading" id="Hkt-lv-Uy4"/>
+                            <constraint firstAttribute="bottom" secondItem="sfp-UU-PUw" secondAttribute="bottom" id="Y5D-qS-cCK"/>
+                            <constraint firstItem="sfp-UU-PUw" firstAttribute="top" secondItem="eCq-jn-skU" secondAttribute="top" id="wFP-vc-16U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ITt-dL-2mb"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="sfp-UU-PUw" id="dv1-ky-h09"/>
+                        <segue destination="5TQ-pX-8dU" kind="show" identifier="MessageSegue" id="S38-VB-CTt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h52-s5-fZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434.9609375" y="12.737920937042459"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="aK8-gI-7Yc">
+            <objects>
+                <viewController id="5TQ-pX-8dU" customClass="MessageViewController" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kt1-RG-d3H">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-ex-Ha9">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="493" translatesAutoresizingMaskIntoConstraints="NO" id="x3K-X7-MCQ">
+                                <rect key="frame" x="453.5" y="376.5" width="117" height="613"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-cc-dRa">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXA-y5-146">
+                                        <rect key="frame" x="43.5" y="553" width="30" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RBB-ex-Ha9" secondAttribute="bottom" id="1Ij-wh-5K7"/>
+                            <constraint firstItem="RBB-ex-Ha9" firstAttribute="trailing" secondItem="kt1-RG-d3H" secondAttribute="trailing" id="Bqk-GE-GXd"/>
+                            <constraint firstItem="x3K-X7-MCQ" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" id="EI0-fx-CPS"/>
+                            <constraint firstItem="RBB-ex-Ha9" firstAttribute="leading" secondItem="kt1-RG-d3H" secondAttribute="leading" id="kTB-YC-hJ1"/>
+                            <constraint firstItem="x3K-X7-MCQ" firstAttribute="centerX" secondItem="kt1-RG-d3H" secondAttribute="centerX" id="oNG-HX-3wC"/>
+                            <constraint firstItem="RBB-ex-Ha9" firstAttribute="top" secondItem="kt1-RG-d3H" secondAttribute="top" id="uwy-xE-FFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QKn-aC-01P"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="KXA-y5-146" id="D54-Rr-T3E"/>
+                        <outlet property="messageLabel" destination="bJ1-cc-dRa" id="OgF-jn-PBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmy-vn-NhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2213.671875" y="12.737920937042459"/>
         </scene>
     </scenes>
     <resources>

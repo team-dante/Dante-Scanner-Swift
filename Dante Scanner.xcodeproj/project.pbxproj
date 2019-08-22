@@ -17,6 +17,8 @@
 		24CC7FEC2304D76700440F5A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CC7FEB2304D76700440F5A /* StoreKit.framework */; };
 		24CC7FEE2304E1EF00440F5A /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC7FED2304E1EF00440F5A /* extension.swift */; };
 		24DAC08B230927070088EFE7 /* ChooseRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DAC08A230927070088EFE7 /* ChooseRoomViewController.swift */; };
+		24ECCCAE230DF3E500860214 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCCAD230DF3E500860214 /* QRScannerVC.swift */; };
+		24ECCCB0230E17D200860214 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCCAF230E17D200860214 /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		24CC7FEB2304D76700440F5A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		24CC7FED2304E1EF00440F5A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		24DAC08A230927070088EFE7 /* ChooseRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoomViewController.swift; sourceTree = "<group>"; };
+		24ECCCAD230DF3E500860214 /* QRScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
+		24ECCCAF230E17D200860214 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		50751B70E4B6B016C212DCDE /* Pods-Dante ScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dante ScannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dante ScannerUITests/Pods-Dante ScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6162B4FBD24B7BDAD93AA735 /* Pods_Dante_ScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dante_ScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		635355F307DC1356DBD593CB /* Pods-Dante Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dante Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Dante Scanner/Pods-Dante Scanner.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,8 +90,10 @@
 				24CA68DF2304D40D00CE6142 /* Dante Scanner.entitlements */,
 				24A0D408230347C700F6613D /* AppDelegate.swift */,
 				24A0D40A230347C700F6613D /* ViewController.swift */,
+				24ECCCAF230E17D200860214 /* MessageViewController.swift */,
 				24DAC08A230927070088EFE7 /* ChooseRoomViewController.swift */,
 				24A0D40C230347C700F6613D /* Main.storyboard */,
+				24ECCCAD230DF3E500860214 /* QRScannerVC.swift */,
 				24A0D40F230347C800F6613D /* Assets.xcassets */,
 				24A0D411230347C800F6613D /* LaunchScreen.storyboard */,
 				24CC7FED2304E1EF00440F5A /* extension.swift */,
@@ -285,6 +291,8 @@
 				24A0D40B230347C700F6613D /* ViewController.swift in Sources */,
 				24DAC08B230927070088EFE7 /* ChooseRoomViewController.swift in Sources */,
 				24A0D409230347C700F6613D /* AppDelegate.swift in Sources */,
+				24ECCCB0230E17D200860214 /* MessageViewController.swift in Sources */,
+				24ECCCAE230DF3E500860214 /* QRScannerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
