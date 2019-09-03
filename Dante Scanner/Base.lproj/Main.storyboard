@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iSd-oE-HKx">
-    <device id="ipad12_9rounded" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-Kn-KWR">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdk-4X-8dI">
-                                <rect key="frame" x="162.5" y="489" width="699" height="388"/>
+                                <rect key="frame" x="333.5" y="318" width="699" height="388"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QPc-xp-Ben">
                                         <rect key="frame" x="24.5" y="141" width="650" height="106"/>
@@ -113,14 +113,14 @@
             <objects>
                 <viewController id="iSd-oE-HKx" customClass="ChooseRoomViewController" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="68S-75-71g">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CaM-Fs-R6H">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose iPad's location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-OC-cCi">
-                                <rect key="frame" x="231.5" y="318" width="561" height="54"/>
+                                <rect key="frame" x="402.5" y="147" width="561" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.41176470588235292" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="kov-hr-Uo9">
-                                <rect key="frame" x="303" y="486" width="418" height="394"/>
+                                <rect key="frame" x="474" y="315" width="418" height="394"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5h-QN-TQt">
                                         <rect key="frame" x="0.0" y="0.0" width="418" height="82"/>
@@ -234,11 +234,11 @@
             <objects>
                 <viewController storyboardIdentifier="QRScannerVC" id="Jm9-uC-XUP" customClass="QRScannerVC" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCq-jn-skU">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfp-UU-PUw" customClass="QRCodeReaderView" customModule="QRCodeReader">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -265,14 +265,14 @@
             <objects>
                 <viewController id="5TQ-pX-8dU" customClass="MessageViewController" customModule="Dante_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kt1-RG-d3H">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-ex-Ha9">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sp-mZ-AHf">
-                                <rect key="frame" x="162" y="324" width="700" height="500"/>
+                                <rect key="frame" x="333" y="135" width="700" height="500"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="aWj-Cn-UEj">
                                         <rect key="frame" x="125" y="25" width="450" height="450"/>
@@ -298,17 +298,8 @@
                                     <constraint firstItem="aWj-Cn-UEj" firstAttribute="centerX" secondItem="5sp-mZ-AHf" secondAttribute="centerX" id="bue-bC-oK6"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-cc-dRa">
-                                <rect key="frame" x="453.5" y="855" width="117" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" red="0.41176470588235292" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                </variation>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR5-AU-D5A">
-                                <rect key="frame" x="392" y="942" width="240" height="100"/>
+                                <rect key="frame" x="563" y="771" width="240" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXA-y5-146">
                                         <rect key="frame" x="105" y="20" width="30" height="60"/>
@@ -332,6 +323,15 @@
                                     <constraint firstItem="KXA-y5-146" firstAttribute="centerX" secondItem="tR5-AU-D5A" secondAttribute="centerX" id="eDL-TX-uo5"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-cc-dRa">
+                                <rect key="frame" x="333" y="653" width="700" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.41176470588235292" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -341,12 +341,14 @@
                             <constraint firstItem="tR5-AU-D5A" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" constant="309" id="CYA-fB-K8L">
                                 <variation key="heightClass=regular-widthClass=compact" constant="210"/>
                             </constraint>
-                            <constraint firstItem="bJ1-cc-dRa" firstAttribute="centerX" secondItem="kt1-RG-d3H" secondAttribute="centerX" id="Wwm-rt-zTY"/>
-                            <constraint firstItem="5sp-mZ-AHf" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" constant="-109" id="acz-4q-9XU"/>
+                            <constraint firstItem="tR5-AU-D5A" firstAttribute="top" secondItem="bJ1-cc-dRa" secondAttribute="bottom" constant="27" id="F8k-2t-ozp"/>
+                            <constraint firstItem="bJ1-cc-dRa" firstAttribute="top" secondItem="5sp-mZ-AHf" secondAttribute="bottom" constant="18" id="UXM-FC-cna"/>
+                            <constraint firstItem="bJ1-cc-dRa" firstAttribute="centerX" secondItem="kt1-RG-d3H" secondAttribute="centerX" constant="0.5" id="Wwm-rt-zTY"/>
+                            <constraint firstItem="5sp-mZ-AHf" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" constant="-127" id="acz-4q-9XU"/>
                             <constraint firstItem="tR5-AU-D5A" firstAttribute="centerX" secondItem="kt1-RG-d3H" secondAttribute="centerX" id="fwc-MG-7ye"/>
                             <constraint firstItem="RBB-ex-Ha9" firstAttribute="leading" secondItem="kt1-RG-d3H" secondAttribute="leading" id="kTB-YC-hJ1"/>
                             <constraint firstItem="RBB-ex-Ha9" firstAttribute="top" secondItem="kt1-RG-d3H" secondAttribute="top" id="uwy-xE-FFF"/>
-                            <constraint firstItem="bJ1-cc-dRa" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" constant="202" id="wxj-G8-6ja">
+                            <constraint firstItem="bJ1-cc-dRa" firstAttribute="centerY" secondItem="kt1-RG-d3H" secondAttribute="centerY" constant="186.5" id="wxj-G8-6ja">
                                 <variation key="heightClass=regular-widthClass=compact" constant="120"/>
                             </constraint>
                         </constraints>
@@ -361,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmy-vn-NhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2213.671875" y="12.737920937042459"/>
+            <point key="canvasLocation" x="2213.3235724743777" y="12.3046875"/>
         </scene>
     </scenes>
     <resources>
