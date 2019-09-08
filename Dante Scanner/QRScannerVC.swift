@@ -32,6 +32,7 @@ class QRScannerVC: UIViewController {
     var room : String = ""
     var role : Int = -1
     var greeting : String = ""
+    var player : AVAudioPlayer?
     
     // when view appears, call scan
     override func viewDidAppear(_ animated: Bool) {
@@ -52,7 +53,25 @@ class QRScannerVC: UIViewController {
                 if verifySuccess {
                     self.processData { (procSuccess) -> Void in
                         if procSuccess {
-                            self.performSegue(withIdentifier: "MessageSegue", sender: nil)
+                            // insert audio here
+                            print("??????????????????")
+                            guard let url = Bundle.main.url(forResource: "iphoneAlert", withExtension: "mp3") else {
+                                print("====>url not found")
+                                return
+                            }
+                            do {
+                                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                                try AVAudioSession.sharedInstance().setActive(true)
+                                
+                                self.player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+                                
+                                guard let player = self.player else { return }
+                                
+                                player.play()
+                                self.performSegue(withIdentifier: "MessageSegue", sender: nil)
+                            } catch let error {
+                                print("@@@@@@@@@", error.localizedDescription)
+                            }
                         }
                     }
                 }
