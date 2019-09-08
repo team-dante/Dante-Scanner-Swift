@@ -54,7 +54,6 @@ class QRScannerVC: UIViewController {
                     self.processData { (procSuccess) -> Void in
                         if procSuccess {
                             // insert audio here
-                            print("??????????????????")
                             guard let url = Bundle.main.url(forResource: "iphoneAlert", withExtension: "mp3") else {
                                 print("====>url not found")
                                 return
