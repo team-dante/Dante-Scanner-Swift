@@ -163,6 +163,7 @@ class QRScannerVC: UIViewController {
                 } // if no snapshot, simply create a new time tracking object with inSession = true
                 else {
                     child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
+                    locationPath.setValue(self.room)
                     self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                     completion(true)
                 }
