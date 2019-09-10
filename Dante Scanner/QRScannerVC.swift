@@ -33,6 +33,13 @@ class QRScannerVC: UIViewController {
     var role : Int = -1
     var greeting : String = ""
     var player : AVAudioPlayer?
+    var ref: DatabaseReference!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ref = Database.database().reference()
+    }
     
     // when view appears, call scan
     override func viewDidAppear(_ animated: Bool) {
@@ -81,7 +88,7 @@ class QRScannerVC: UIViewController {
     }
     
     func verifyRole(completion: @escaping (_ verifySuccess: Bool) -> Void) {
-        Database.database().reference().child("Staff").queryOrdered(byChild: "phoneNum").queryEqual(toValue: self.decodedString).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("Staff").queryOrdered(byChild: "phoneNum").queryEqual(toValue: self.decodedString).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 self.role = 0
             }
@@ -96,16 +103,16 @@ class QRScannerVC: UIViewController {
     func processData(completion: @escaping (_ procSuccess: Bool) -> Void) {
         // update staff location (could have done a lot more)
         if self.role == 0 {
-            Database.database().reference().child("/StaffLocation/\(self.decodedString)/room").setValue(self.room)
+            ref.child("/StaffLocation/\(self.decodedString)/room").setValue(self.room)
             self.greeting = "Hey, staff!\nYou are now at \(self.prettifyRoom(input: self.room))"
             completion(true)
         } // if it is a patient,
         else {
             // set up the path for modifying time tracking
-            let child = Database.database().reference().child("/PatientVisitsByDates/\(self.decodedString)/\(self.formattedDate())")
+            let child = ref.child("/PatientVisitsByDates/\(self.decodedString)/\(self.formattedDate())")
             
             // set up the path for updating patient location
-            let locationPath = Database.database().reference().child("/PatientLocation/\(self.decodedString)")
+            let locationPath = ref.child("/PatientLocation/\(self.decodedString)/room")
             
             child.observeSingleEvent(of: .value, with: {(snapshot) in
                 if snapshot.exists() {
@@ -128,7 +135,7 @@ class QRScannerVC: UIViewController {
                                         self.greeting = "Thank you for scanning out!\nYou left \(self.prettifyRoom(input: self.room))"
                                         
                                         // patient location will be set to "Private" when scanning out
-                                        locationPath.setValue(["room": "Private"])
+                                        locationPath.setValue("Private")
                                         
                                         // if the object that has inSession = true, and it's the current room,
                                         // it means the patient wanted to scan out; so do not push a new object
@@ -145,7 +152,7 @@ class QRScannerVC: UIViewController {
                     // If patients are NOT in any of the rooms, scan them into the current room
                     if inCurrRoom {
                         child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
-                        locationPath.setValue(["room": self.room])
+                        locationPath.setValue(self.room)
                         self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                         
                         // halt the closure immediately once done
