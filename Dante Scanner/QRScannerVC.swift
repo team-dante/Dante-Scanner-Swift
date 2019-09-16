@@ -34,6 +34,7 @@ class QRScannerVC: UIViewController {
     var greeting : String = ""
     var player : AVAudioPlayer?
     var ref: DatabaseReference!
+    var startTime : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,6 +114,7 @@ class QRScannerVC: UIViewController {
             
             // set up the path for updating patient location
             let locationPath = ref.child("/PatientLocation/\(self.decodedString)/room")
+            let startTimePath = ref.child("/PatientLocation/\(self.decodedString)/startTime")
             
             child.observeSingleEvent(of: .value, with: {(snapshot) in
                 if snapshot.exists() {
@@ -136,7 +138,7 @@ class QRScannerVC: UIViewController {
                                         
                                         // patient location will be set to "Private" when scanning out
                                         locationPath.setValue("Private")
-                                        
+                                        startTimePath.setValue("N/A")
                                         // if the object that has inSession = true, and it's the current room,
                                         // it means the patient wanted to scan out; so do not push a new object
                                         if let currRoom = obj["room"] as? String {
@@ -153,6 +155,8 @@ class QRScannerVC: UIViewController {
                     if inCurrRoom {
                         child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
                         locationPath.setValue(self.room)
+                        self.startTime = String(Date().timeIntervalSince1970)
+                        startTimePath.setValue(self.startTime)
                         self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                         
                         // halt the closure immediately once done
@@ -164,6 +168,8 @@ class QRScannerVC: UIViewController {
                 else {
                     child.childByAutoId().setValue(["room": self.room, "startTime": Int(NSDate().timeIntervalSince1970), "inSession": true, "endTime": 0])
                     locationPath.setValue(self.room)
+                    self.startTime = String(Date().timeIntervalSince1970)
+                    startTimePath.setValue(self.startTime)
                     self.greeting = "Thank you for scanning in!\nYou are at \(self.prettifyRoom(input: self.room))"
                     completion(true)
                 }
